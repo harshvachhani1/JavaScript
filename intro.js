@@ -1,5 +1,38 @@
 //Primitives Data types :- Null,Number,symbol,String,Boolean,Bigint,Undefined
 
+/*
+        Scope   Redeclare   Reassign   Hoisted  Binds this
+var   	No	    Yes	        Yes    	   Yes	    Yes
+let	    Yes    	No	        Yes	       No	      No
+const 	Yes   	No        	No	       No	      No
+*/
+
+/*
+let myvar = 10;
+console.log(myvar); // output : 10
+
+// reassignment
+myvar = 20;
+console.log(myvar); // output : 20
+
+// redeclaration
+let myvar = 5;
+console.log(myvar); // output : syntax error
+*/
+
+/*
+const myvar = "first value";
+console.log(myvar); // first value
+
+// reassignment
+myvar = "second value";
+console.log(myvar); // TypeError
+
+// redeclaration
+const myvar = "third value";
+console.log(myvar); // Syntax Error
+*/
+
 //Non-Primitive data types :- Array, Class, String, and Interface
 
 //Types Of Operators :-
@@ -73,4 +106,46 @@ console.log("Ans :- " + `${Marks}` + " - " + `${Marks2}` + " - " + `${Marks3}`);
 //  block of code to be executed if the condition1 is false and condition2 is false
 // }
 
-// Variable Scope
+// Function Syntax
+/*
+function name(parameter1, parameter2, parameter3) {
+   code to be executed
+}
+*/
+
+// Types of UDF Funcion
+/*
+Functions with arguments and return values.
+EX:1
+function sum(x,y){
+  var z=$x+$y;
+  return z;
+}
+var a = sum(20,40);
+document.write(a);
+
+Functions with arguments and without return values.
+Ex:2
+function sum(x,y){
+  var z = x+y;
+  console.log(z);
+}
+sum(20,30);
+
+Functions without arguments and with return values.
+Ex 3:
+function sum() {
+  var a = 40;
+  var b = 10;
+  var c = a + b;
+  return c;
+}
+console.log(sum());
+
+Functions without arguments and without return values.
+Ex 4:
+function name(){
+  console.log("hello");
+}
+name();
+*/
