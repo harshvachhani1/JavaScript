@@ -1,6 +1,7 @@
 //Primitives Data types :- Null,Number,symbol,String,Boolean,Bigint,Undefined
 
-/*
+/*Variables are Containers for Storing Data
+
         Scope   Redeclare   Reassign   Hoisted  Binds this
 var   	No	    Yes	        Yes    	   Yes	    Yes
 let	    Yes    	No	        Yes	       No	      No
