@@ -30,6 +30,12 @@ for (let count = 0; count < books.length; count++) {
   console.log(`${indexNumber}. ${bookName}`);
 }
 
+/*same example as write above */
+// books.forEach((todo, index) => {
+//   const indexPlus = index + 1; //for starting index 1 default start is 0
+//   console.log(`${indexPlus}. ${todo}`);
+// });
+
 // console.log(books.toString());
 
 // console.log(books.join(" -- "));
