@@ -1,4 +1,4 @@
-const todos = [
+const notes = [
   {
     text: "Order cat food",
     completed: true,
@@ -26,7 +26,7 @@ document.querySelector("#create").addEventListener("click", (targetValue) => {
 });
 
 document.querySelector("#remove").addEventListener("click", (targetValue) => {
-  document.querySelectorAll(".note").forEach(function (note) {
+  document.querySelectorAll("p").forEach(function (note) {
     note.remove();
   });
 });
