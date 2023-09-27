@@ -67,7 +67,7 @@ document.querySelector("#new-todo").addEventListener("submit", (dataGet) => {
     completed: false,
   });
   renderTodos(todos, filters);
-  e.target.elements.text.value = "";
+  dataGet.target.elements.text.value = "";
 });
 
 document
