@@ -47,3 +47,15 @@ A callback is a function passed as an argument of another function.
 
 This means that the parent function is usually built to use any kind of function. But the callback function, on the other hand, is meant to be used in a specific case (or a restricted number of cases) in which the parent function is used.
 */
+
+/*Then()
+the callback function for the success and the callback function for failure cases of the Promise.Promise is fulfilled or rejected.
+*/
+
+/*
+function can be asynched and then can await promises too.
+
+async makes a function return a Promise
+
+await makes a function wait for a Promise
+*/
