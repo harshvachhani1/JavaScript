@@ -1,0 +1,50 @@
+<!-- This file html beacause check Prototype how to work -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*EX 1: class name -> Properties -> object -> method*/
+      const Person = function (firstName, lastName, age, likes = []) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.likes = likes;
+      };
+
+      //prototype object & getBio method
+      Person.prototype.getBio = function () {
+        let bio = `${this.firstName} is ${this.age}.`;
+
+        this.likes.forEach((like) => {
+          bio += ` ${this.firstName} likes ${like}.`;
+        });
+
+        return bio;
+      };
+      Person.prototype.setName = function (fullName) {
+        const names = fullName.split(" ");
+        this.firstName = names[0];
+        this.lastName = names[1];
+      };
+
+      const person1 = new Person("Ram", "raj", 55, [
+        "reading",
+        "traveling",
+        "teaching",
+      ]);
+      person1.setName("manoj kumar");
+      console.log(person1.getBio());
+      console.log(person1);
+      const person2 = new Person("Raj", "kishan", 25);
+      console.log(person2.getBio());
+
+      //console.log(me.age); specific value
+      //Ans : Person { firstName: 'Ram', lastName: 'raj', age: 55 } Person { firstName: 'Raj', lastName: 'kishan', age: 25 }
+    </script>
+  </body>
+</html>
