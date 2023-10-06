@@ -1,0 +1,42 @@
+<!-- install babel -->
+npm install -g babel-cli@latest
+
+<!-- node_modules -->
+npm install
+
+<!-- new file generate -->
+babel input.js -o output.js
+
+<!-- package.json build-->
+npm init
+
+<!-- package-lock.json file make -->
+npm install babel-preset-env@latest
+
+<!-- new file -->
+babel input.js --out-file output.js --presets env
+
+<!-- babel src/index.js --out-file public/scripts/bundle.js --presets env --watch-->
+
+<!-- live-server public -->
+
+<!-- npm install babel-cli@latest live-server@latest -->
+
+<!-- install webpack  and cli-->
+npm install webpack@latest webpack-cli@latest
+
+<!-- npm install babel-loader@latest -->
+
+<!-- delete package.json file code -->
+"build": "babel src/index.js --out-file public/scripts/bundle.js --presets env
+--watch"
+
+<!-- while code change after run -->
+"build": "webpack --mode production" 
+npm run build
+
+<!-- polyfill webpack -->
+npm install babel-polyfill@latest
+
+<!-- generate production build -->
+npm run build

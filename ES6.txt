@@ -1,0 +1,121 @@
+1)Template Literals 
+EX :- 
+let str1 = 'My name is:' 
+let name = 'raj'; 
+let str2 =`${str1} ${name}` 
+
+2)Destructuring Objects
+EX :- 
+let information = { firstName: 'raj', lastName:'maheta'};
+let { firstName,lastName } = information;
+
+//variable name and property name declare same
+//also write a alias name like  {firstname : name, etc : e}
+
+3)Destructuring Arrays
+EX :-
+let user = ["raj" , 25];
+let [name,age] = user;
+console.log(name);
+
+//also set defaul value
+
+4)Object Literal
+EX :- 
+let name = "raj maheta";
+let obj = {name : name};
+let obj = {name}; 
+
+EX :-
+let name = "student";
+var obj = {
+  [name + "frstname"] : "raj maeta",
+  course : "Btech",
+  detail(){
+    return `${this.studentname} is ${this.course}`;
+  }
+};
+
+console.log(obj['detail']());
+
+5)For…Of Loop
+EX :- 
+let str = 'hello';
+for (let char of str) 
+{
+    console.log(char);
+}
+
+6)Spread Operator(item out)
+EX :-
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let arr3 = [...arr1, ...arr2];
+
+//array and object
+
+7)Rest Operator(item in)
+EX :-
+function show(a,...number){
+  console.log(number);
+}
+show(10,20,30,40,50);
+
+//a = 10;
+//The rest operator must be the last parameter to a function
+//function
+
+8)Arrow Functions
+EX :-
+const square = num => num * num;
+
+9)Default Parameters
+EX :-
+function sum (a, b = 1) {    
+  return a + b;
+}
+
+10)includes()
+EX :-
+let str = 'Hello World';
+console.log(str.includes('hello')); 
+
+11)Import and Export
+EX :-
+// exports function 
+export function double(num) {   
+ return num * num;  
+}
+===============
+// imports function  
+import { double } from '..filepath/filename
+
+12)padStart() and padEnd()
+EX :-
+//padStart and padEnd will simply add padding at the start and end of the string.
+
+let str = 'Hello';  
+str.padStart(3); // '   Hello'
+str.padEnd(3); // 'Hello   '
+
+13)Classes
+EX :-
+class Car {
+   constructor(wheels, doors) {
+      this.wheels = wheels;
+      this.doors = doors;
+   }
+   describeMe() {
+     console.log(`Doors: ${this.doors} and Wheels: ${this.wheels}`);
+   }}
+const car1 = new Car(4, 2);  
+car1.describeMe(); // Doors: 2 and Wheels: 4
+
+14)Trailing Commas
+EX :-
+let arr = [  1,   2,   3, ];
+arr.length; // 3
+
+15)Async & Await
+EX :- 
+performed in before hangman game
